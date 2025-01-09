@@ -4,90 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snoop Pods - Vendas de Pods</title>
+    <!-- Link para o arquivo CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Barra de pesquisa -->
-    <div class="search-bar">
-        <input type="text" placeholder="Pesquisar por pods..." />
-        <button>Pesquisar</button>
-    </div>
-
-    <!-- Cardápio de Pods -->
-    <div class="cardapio">
-        <!-- Pod Igniti V50 -->
-        <div class="produto">
-            <img src="pod-image.jpg" alt="Igniti V50">
-            <h3>Igniti V50 - Sabores:</h3>
-            <ul>
-                <li>Menta - R$ 55,00 <span style="text-decoration: line-through;">R$ 80,00</span></li>
-                <li>Framboesa - R$ 55,00 <span style="text-decoration: line-through;">R$ 80,00</span></li>
-                <li>Manga - R$ 55,00 <span style="text-decoration: line-through;">R$ 80,00</span></li>
-            </ul>
-            <button class="botao-comprar">Comprar Agora</button>
+    <!-- Cabeçalho do site -->
+    <header>
+        <div class="logo">
+            <h1>Snoop Pods</h1>
+            <p>Vendas de Pods - Entrega rápida</p>
         </div>
+    </header>
 
-        <!-- Pod THC 1 -->
-        <div class="produto">
-            <img src="pod-image.jpg" alt="Pod THC 1">
-            <h3>Pod THC 1 - Sabores:</h3>
-            <ul>
-                <li>Original - R$ 120,00 <span style="text-decoration: line-through;">R$ 150,00</span></li>
-                <li>Melancia - R$ 120,00 <span style="text-decoration: line-through;">R$ 150,00</span></li>
-                <li>Uva - R$ 120,00 <span style="text-decoration: line-through;">R$ 150,00</span></li>
-            </ul>
-            <button class="botao-comprar">Comprar Agora</button>
+    <!-- Barra de navegação (pode ser melhorada depois) -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção de Produtos -->
+    <section id="produtos">
+        <h2>Escolha seus Pods</h2>
+        <div class="produtos-lista">
+            <!-- Produto 1 -->
+            <div class="produto">
+                <img src="img/pod1.jpg" alt="Pod 1">
+                <h3>Pod Ignite V50</h3>
+                <p>Preço: R$ 55,00</p>
+            </div>
+            <!-- Produto 2 -->
+            <div class="produto">
+                <img src="img/pod2.jpg" alt="Pod 2">
+                <h3>Pod Breeze Plus</h3>
+                <p>Preço: R$ 50,00</p>
+            </div>
+            <!-- Produto 3 -->
+            <div class="produto">
+                <img src="img/pod3.jpg" alt="Pod 3">
+                <h3>Pod Stig 3000</h3>
+                <p>Preço: R$ 45,00</p>
+            </div>
+            <!-- Adicione mais produtos aqui -->
         </div>
+    </section>
 
-        <!-- Pod THC 2 -->
-        <div class="produto">
-            <img src="pod-image.jpg" alt="Pod THC 2">
-            <h3>Pod THC 2 - Sabores:</h3>
-            <ul>
-                <li>Indica - R$ 120,00 <span style="text-decoration: line-through;">R$ 150,00</span></li>
-                <li>Sativa - R$ 120,00 <span style="text-decoration: line-through;">R$ 150,00</span></li>
-                <li>Blueberry - R$ 120,00 <span style="text-decoration: line-through;">R$ 150,00</span></li>
-            </ul>
-            <button class="botao-comprar">Comprar Agora</button>
-        </div>
+    <!-- Seção de Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Telefone: <a href="tel:+55-11-989932945">+55 11 989932945</a></p>
+        <p>Instagram: <a href="https://instagram.com/snoop._pods" target="_blank">@snoop._pods</a></p>
+        <p><a href="https://wa.me/5511989932945" target="_blank">Chame no WhatsApp</a></p>
+    </section>
 
-        <!-- Pod X -->
-        <div class="produto">
-            <img src="pod-image.jpg" alt="Pod X">
-            <h3>Pod X - Sabores:</h3>
-            <ul>
-                <li>Limão - R$ 40,00 <span style="text-decoration: line-through;">R$ 60,00</span></li>
-                <li>Coco - R$ 40,00 <span style="text-decoration: line-through;">R$ 60,00</span></li>
-                <li>Melancia - R$ 40,00 <span style="text-decoration: line-through;">R$ 60,00</span></li>
-            </ul>
-            <button class="botao-comprar">Comprar Agora</button>
-        </div>
-
-        <!-- Pod Y -->
-        <div class="produto">
-            <img src="pod-image.jpg" alt="Pod Y">
-            <h3>Pod Y - Sabores:</h3>
-            <ul>
-                <li>Abacaxi - R$ 45,00 <span style="text-decoration: line-through;">R$ 70,00</span></li>
-                <li>Groselha - R$ 45,00 <span style="text-decoration: line-through;">R$ 70,00</span></li>
-                <li>Morango - R$ 45,00 <span style="text-decoration: line-through;">R$ 70,00</span></li>
-            </ul>
-            <button class="botao-comprar">Comprar Agora</button>
-        </div>
-
-        <!-- Pod Z -->
-        <div class="produto">
-            <img src="pod-image.jpg" alt="Pod Z">
-            <h3>Pod Z - Sabores:</h3>
-            <ul>
-                <li>Uva Verde - R$ 50,00 <span style="text-decoration: line-through;">R$ 70,00</span></li>
-                <li>Cassis - R$ 50,00 <span style="text-decoration: line-through;">R$ 70,00</span></li>
-                <li>Limao Siciliano - R$ 50,00 <span style="text-decoration: line-through;">R$ 70,00</span></li>
-            </ul>
-            <button class="botao-comprar">Comprar Agora</button>
-        </div>
-    </div>
-
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Snoop Pods. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
