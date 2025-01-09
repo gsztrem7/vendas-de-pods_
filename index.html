@@ -5,76 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snoop Pods</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
         <div class="header-container">
             <h1>Snoop Pods</h1>
-            <p>Os melhores pods pelos melhores preços!</p>
-            <a href="https://wa.me/5511989932945" class="cta-button">Chamar no WhatsApp</a>
+            <p>As melhores marcas de pods em um só lugar!</p>
         </div>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#kits">Kits</a></li>
-            <li><a href="#ignites">Ignites</a></li>
-            <li><a href="#elfbar">Elfbar</a></li>
-            <li><a href="#vapesoul">Vapesoul</a></li>
+            <li><button data-section="elfbar">Elfbar</button></li>
+            <li><button data-section="ignite">Ignite</button></li>
+            <li><button data-section="vapesoul">Vapesoul</button></li>
+            <li><button data-section="oxbar">Oxbar</button></li>
+            <li><button data-section="acessorios">Acessórios</button></li>
         </ul>
     </nav>
 
     <main>
-        <section id="kits">
-            <h2>Kits Disponíveis</h2>
-            <div class="product">
-                <img src="https://via.placeholder.com/200" alt="Kit Elfbar EW">
-                <h3>Kit Elfbar EW</h3>
-                <p><strong>Preço:</strong> R$70,00 (bateria) | R$85,00 (cartucho)</p>
-                <p><strong>Sabores:</strong> Morango gelado, Sorvete americano, Maçã verde</p>
-            </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/200" alt="Kit Elfbar 9k">
-                <h3>Kit Elfbar 9k</h3>
-                <p><strong>Preço:</strong> R$90,00</p>
-                <p><strong>Sabores:</strong> Menta, Cereja gelada, Uva gelada, Melancia gelada</p>
-            </div>
-        </section>
-
-        <section id="ignites">
-            <h2>Ignites</h2>
-            <div class="product">
-                <img src="https://via.placeholder.com/200" alt="Ignite V15">
-                <h3>Ignite V15</h3>
-                <p><strong>Preço:</strong> R$35,00</p>
-                <p><strong>Sabores:</strong> Cereja gelada, Pêssego, Sorvete de morango, Framboesa e laranja gelada</p>
-            </div>
-        </section>
-
-        <section id="elfbar">
+        <!-- Seção Elfbar -->
+        <section id="elfbar" class="hidden">
             <h2>Elfbar</h2>
             <div class="product">
                 <img src="https://via.placeholder.com/200" alt="Elfbar 6.000">
                 <h3>Elfbar 6.000</h3>
                 <p><strong>Preço:</strong> R$50,00</p>
-                <p><strong>Sabores:</strong> Abacaxi manga e laranja, Morango e banana, Suco de pêssego</p>
+                <p><strong>Sabores:</strong> Abacaxi manga e laranja, Morango e banana</p>
+                <button class="buy-button" data-product="Elfbar 6.000">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200" alt="Elfbar 10.000">
+                <h3>Elfbar 10.000</h3>
+                <p><strong>Preço:</strong> R$75,00</p>
+                <p><strong>Sabores:</strong> Uva, Kiwi e melancia</p>
+                <button class="buy-button" data-product="Elfbar 10.000">Comprar</button>
             </div>
         </section>
 
-        <section id="vapesoul">
-            <h2>Vapesoul</h2>
-            <div class="product">
-                <img src="https://via.placeholder.com/200" alt="Vapesoul 6.500">
-                <h3>Vapesoul 6.500</h3>
-                <p><strong>Preço:</strong> R$55,00</p>
-                <p><strong>Sabores:</strong> Menta, Love 66, Uva</p>
-            </div>
-        </section>
+        <!-- Outras seções omitidas para exemplo -->
     </main>
 
     <footer>
-        <p>📞 Contato: +55 11 98993-2945</p>
         <p>📷 Instagram: <a href="https://instagram.com/snoop._pods" target="_blank">@snoop._pods</a></p>
     </footer>
+
+    <!-- Modal para exibir a chave Pix -->
+    <div id="pix-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Pagamento via Pix</h2>
+            <p>Produto selecionado: <strong id="selected-product"></strong></p>
+            <p>Chave Pix: <strong>11989932945</strong></p>
+            <p>Finalize seu pagamento e envie o comprovante pelo WhatsApp!</p>
+        </div>
+    </div>
 </body>
 </html>
