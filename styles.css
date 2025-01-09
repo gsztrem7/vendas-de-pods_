@@ -1,0 +1,113 @@
+/* Estilo da Barra de Pesquisa */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+.search-bar input {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #e55342;
+}
+
+/* Estilo do Cardápio de Pods */
+.cardapio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.produto {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.produto h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.produto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.produto ul li {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.produto button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.produto button:hover {
+    background-color: #e55342;
+}
+
+/* Estilo Responsivo */
+@media (max-width: 768px) {
+    .cardapio {
+        grid-template-columns: 1fr 1fr; /* Dois itens por linha em telas menores */
+    }
+
+    .search-bar input {
+        width: 80%;
+    }
+
+    .search-bar button {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cardapio {
+        grid-template-columns: 1fr; /* Um item por linha em telas muito pequenas */
+    }
+
+    .search-bar input {
+        width: 90%;
+    }
+
+    .search-bar button {
+        padding: 8px;
+    }
+}
