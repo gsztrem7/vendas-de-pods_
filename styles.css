@@ -1,123 +1,105 @@
-/* Resetando algumas margens e preenchimentos padrões */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* Definindo a fonte e o fundo para todo o site */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
 }
 
-/* Estilo do cabeçalho */
 header {
-    background-color: #333;
-    color: white;
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 20px;
     text-align: center;
-    padding: 20px 0;
 }
 
-header h1 {
-    font-size: 36px;
+.header-container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-header p {
-    font-size: 18px;
+.cta-button {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
 }
 
-/* Estilo da barra de navegação */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    background-color: #444;
-    padding: 10px 0;
+    gap: 20px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: inline;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 3px;
 }
 
 nav ul li a:hover {
-    color: #4CAF50;
+    background-color: #ff9800;
 }
 
-/* Estilo da seção de produtos */
-#produtos {
-    padding: 50px 0;
-    background-color: white;
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
     text-align: center;
-}
-
-#produtos h2 {
-    font-size: 30px;
     margin-bottom: 20px;
 }
 
-.produtos-lista {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.produto {
+.product {
     background-color: #fff;
     border: 1px solid #ddd;
+    border-radius: 5px;
     padding: 20px;
+    text-align: center;
     margin: 10px;
-    width: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #2d2d2d;
+    color: #fff;
     text-align: center;
+    padding: 10px;
+    margin-top: 20px;
 }
 
-.produto img {
-    width: 100%;
-    height: auto;
-}
-
-.produto h3 {
-    font-size: 20px;
-    margin: 10px 0;
-}
-
-.produto p {
-    font-size: 16px;
-    color: #555;
-}
-
-/* Estilo do contato */
-#contato {
-    background-color: #333;
-    color: white;
-    padding: 30px 0;
-    text-align: center;
-}
-
-#contato a {
-    color: #4CAF50;
+footer a {
+    color: #ff9800;
     text-decoration: none;
 }
 
-#contato a:hover {
+footer a:hover {
     text-decoration: underline;
-}
-
-/* Estilo do rodapé */
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
