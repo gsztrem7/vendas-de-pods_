@@ -9,58 +9,73 @@
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <h1>Snoop Pods</h1>
-            <p>As melhores marcas de pods em um só lugar!</p>
-        </div>
+        <h1>Snoop Pods</h1>
+        <p>Bem-vindo à melhor loja de pods!</p>
     </header>
 
     <nav>
-        <ul>
-            <li><button data-section="elfbar">Elfbar</button></li>
-            <li><button data-section="ignite">Ignite</button></li>
-            <li><button data-section="vapesoul">Vapesoul</button></li>
-            <li><button data-section="oxbar">Oxbar</button></li>
-            <li><button data-section="acessorios">Acessórios</button></li>
+        <ul class="menu">
+            <li><a href="#elfbar">Elfbar</a></li>
+            <li><a href="#ignite">Ignite</a></li>
+            <li><a href="#vaporesso">Vaporesso</a></li>
         </ul>
     </nav>
 
     <main>
-        <!-- Seção Elfbar -->
-        <section id="elfbar" class="hidden">
+        <!-- Elfbar Section -->
+        <section id="elfbar" class="product-section">
             <h2>Elfbar</h2>
             <div class="product">
-                <img src="https://via.placeholder.com/200" alt="Elfbar 6.000">
-                <h3>Elfbar 6.000</h3>
-                <p><strong>Preço:</strong> R$50,00</p>
-                <p><strong>Sabores:</strong> Abacaxi manga e laranja, Morango e banana</p>
-                <button class="buy-button" data-product="Elfbar 6.000">Comprar</button>
+                <img src="elfbar1.jpg" alt="Elfbar 6000">
+                <h3>Elfbar 6000</h3>
+                <p>R$50,00</p>
+                <button class="buy-button" data-pix="11989932945">Comprar</button>
             </div>
             <div class="product">
-                <img src="https://via.placeholder.com/200" alt="Elfbar 10.000">
-                <h3>Elfbar 10.000</h3>
-                <p><strong>Preço:</strong> R$75,00</p>
-                <p><strong>Sabores:</strong> Uva, Kiwi e melancia</p>
-                <button class="buy-button" data-product="Elfbar 10.000">Comprar</button>
+                <img src="elfbar2.jpg" alt="Elfbar 10000">
+                <h3>Elfbar 10000</h3>
+                <p>R$75,00</p>
+                <button class="buy-button" data-pix="11989932945">Comprar</button>
             </div>
         </section>
 
-        <!-- Outras seções omitidas para exemplo -->
+        <!-- Ignite Section -->
+        <section id="ignite" class="product-section">
+            <h2>Ignite</h2>
+            <div class="product">
+                <img src="ignite1.jpg" alt="Ignite V50">
+                <h3>Ignite V50</h3>
+                <p>R$70,00</p>
+                <button class="buy-button" data-pix="11989932945">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="ignite2.jpg" alt="Ignite V80">
+                <h3>Ignite V80</h3>
+                <p>R$85,00</p>
+                <button class="buy-button" data-pix="11989932945">Comprar</button>
+            </div>
+        </section>
+
+        <!-- Vaporesso Section -->
+        <section id="vaporesso" class="product-section">
+            <h2>Vaporesso</h2>
+            <div class="product">
+                <img src="vaporesso1.jpg" alt="Vaporesso Sky Solo">
+                <h3>Sky Solo</h3>
+                <p>R$110,00</p>
+                <button class="buy-button" data-pix="11989932945">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="vaporesso2.jpg" alt="Vaporesso Sky Solo Plus">
+                <h3>Sky Solo Plus</h3>
+                <p>R$130,00</p>
+                <button class="buy-button" data-pix="11989932945">Comprar</button>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>📷 Instagram: <a href="https://instagram.com/snoop._pods" target="_blank">@snoop._pods</a></p>
+        <p>&copy; 2025 Snoop Pods. Todos os direitos reservados.</p>
     </footer>
-
-    <!-- Modal para exibir a chave Pix -->
-    <div id="pix-modal" class="modal hidden">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <h2>Pagamento via Pix</h2>
-            <p>Produto selecionado: <strong id="selected-product"></strong></p>
-            <p>Chave Pix: <strong>11989932945</strong></p>
-            <p>Finalize seu pagamento e envie o comprovante pelo WhatsApp!</p>
-        </div>
-    </div>
 </body>
 </html>
