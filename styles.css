@@ -1,113 +1,123 @@
-/* Estilo da Barra de Pesquisa */
-.search-bar {
+/* Resetando algumas margens e preenchimentos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a fonte e o fundo para todo o site */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Estilo da barra de navegação */
+nav ul {
+    list-style: none;
     display: flex;
     justify-content: center;
-    padding: 10px;
-    background-color: #f4f4f4;
+    background-color: #444;
+    padding: 10px 0;
 }
 
-.search-bar input {
-    width: 60%;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+nav ul li {
+    margin: 0 15px;
 }
 
-.search-bar button {
-    padding: 10px;
-    margin-left: 10px;
-    background-color: #ff6347;
+nav ul li a {
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
 }
 
-.search-bar button:hover {
-    background-color: #e55342;
+nav ul li a:hover {
+    color: #4CAF50;
 }
 
-/* Estilo do Cardápio de Pods */
-.cardapio {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
+/* Estilo da seção de produtos */
+#produtos {
+    padding: 50px 0;
+    background-color: white;
+    text-align: center;
+}
+
+#produtos h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.produtos-lista {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .produto {
     background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .produto img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
-    object-fit: cover;
 }
 
 .produto h3 {
-    font-size: 18px;
-    color: #333;
-    margin-top: 10px;
+    font-size: 20px;
+    margin: 10px 0;
 }
 
-.produto ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.produto ul li {
+.produto p {
     font-size: 16px;
-    color: #333;
-    margin: 5px 0;
+    color: #555;
 }
 
-.produto button {
-    background-color: #ff6347;
+/* Estilo do contato */
+#contato {
+    background-color: #333;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 30px 0;
+    text-align: center;
 }
 
-.produto button:hover {
-    background-color: #e55342;
+#contato a {
+    color: #4CAF50;
+    text-decoration: none;
 }
 
-/* Estilo Responsivo */
-@media (max-width: 768px) {
-    .cardapio {
-        grid-template-columns: 1fr 1fr; /* Dois itens por linha em telas menores */
-    }
-
-    .search-bar input {
-        width: 80%;
-    }
-
-    .search-bar button {
-        padding: 8px;
-    }
+#contato a:hover {
+    text-decoration: underline;
 }
 
-@media (max-width: 480px) {
-    .cardapio {
-        grid-template-columns: 1fr; /* Um item por linha em telas muito pequenas */
-    }
-
-    .search-bar input {
-        width: 90%;
-    }
-
-    .search-bar button {
-        padding: 8px;
-    }
+/* Estilo do rodapé */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
